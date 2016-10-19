@@ -15,9 +15,9 @@ BUILT_OBJECTS= $(patsubst %,$(OBJ_DIR)/%,$(OBJECTS))
 CXX= g++
 CXXFLAGS= -Wall -O2 
 PROG=  AddUMIsToBam
-LIBS= -L/PathToBamtools/lib -lbamtools -lz
-LDFLAGS = -Wl,-rpath /PathToBamtools/bamtools/lib
-INCLUDES = -I/PathToBamtools/bamtools/include
+LIBS= -L/FolderWhereBamToolsIs/lib -lbamtools -lz
+LDFLAGS = -Wl,-rpath /FolderWhereBamToolsIs/lib
+INCLUDES = -I/FolderWhereBamToolsIs/include
 
 # ================
 # build targets
