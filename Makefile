@@ -15,9 +15,9 @@ BUILT_OBJECTS= $(patsubst %,$(OBJ_DIR)/%,$(OBJECTS))
 CXX= g++
 CXXFLAGS= -Wall -O2 
 PROG=  AddUMIsToBam
-LIBS= -L/cil/shed/apps/internal/RNA_utilities/bamtools/lib -lbamtools -lz
-LDFLAGS = -Wl,-rpath /cil/shed/apps/internal/RNA_utilities/bamtools/lib
-INCLUDES = -I/cil/shed/apps/internal/RNA_utilities/bamtools/include
+LIBS= -L/PathToBamtools/lib -lbamtools -lz
+LDFLAGS = -Wl,-rpath /PathToBamtools/bamtools/lib
+INCLUDES = -I/PathToBamtools/bamtools/include
 
 # ================
 # build targets
