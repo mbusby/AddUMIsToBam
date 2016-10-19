@@ -64,6 +64,25 @@ struct quadCt
 	
 };
 
+struct pentCt 
+{
+	unsigned int ct1;
+	unsigned int ct2;
+	unsigned int ct3;
+	unsigned int ct4;
+	unsigned int ct5;
+
+	pentCt(void)
+		: ct1(0)
+		, ct2(0)
+		, ct3(0)
+		, ct4(0)
+		, ct5(0)
+	
+	{}
+	
+};
+
 struct ctCoverage
 {
 	unsigned int forwardUnique;
@@ -211,6 +230,9 @@ class Handy
 			vector <string> getSplitString(string, string );
 			vector <int> getUniformRandomIntegers(int, int, int);
 			vector <int> getNormalRandomIntegers(int, double, double);
+			int getHammingDistanceBetweenTwoStrings(string, string);
+			string getFileNameFromPath(string);
+			string getFileNameStubFromFileName(string);
 			
 
 			int getUniformRandomInteger(int, int);
@@ -224,6 +246,8 @@ class Handy
 			unsigned int checkRead(string);
 			unsigned int checkWrite(string);
 			string getColorSpaceFromPseudoColorSpace(string);
+			double getGCofAString(string);
+			string getStringWithReplace(string, string, string);
 			
 			string getTime();	
 			string getDateTimeAsStr();			
