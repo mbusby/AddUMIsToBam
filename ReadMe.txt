@@ -4,7 +4,7 @@ A FASTQ file
 A bam file
 Adds the UMI and UMI base qualities to the bam file in the RX and QX tags
 
-Developed by: Michele Busby, Computational Biologist Broad Technology Labs/MBRD Broad Institute 2/10/2016
+Developed by: Michele Busby original release 2/10/2016
 
 Why would I want to do this?
 
