@@ -38,7 +38,11 @@ Bamtools
 To get this to compile you will need to:
 
 1) Download Derek Barnett's bamtools API and install it in a folder somewhere. It is here: https://github.com/pezmaster31/bamtools You need the API, not the command line program though is quite useful to have. 
-2) Then, after you install it, you need to edit the Makefile in this folder so that everywhere it says "FolderWhereBamToolsIs" you put in the folder where bamtools is located.
+2) Then, after you install it, you need to edit the Makefile in this folder so that everywhere it says "FolderWhereBamToolsIs" you put in the folder where bamtools is located. There are three places:
+LIBS= -L/FolderWhereBamToolsIs/lib -lbamtools -lz
+LDFLAGS = -Wl,-rpath /FolderWhereBamToolsIs/lib
+INCLUDES = -I/FolderWhereBamToolsIs/include
+
 
 Compiling
 
